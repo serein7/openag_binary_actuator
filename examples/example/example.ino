@@ -1,6 +1,6 @@
 #include <openag_binary_actuator.h>
 
-#define PIN 4
+#define PIN 13
 
 BinaryActuator actuator(PIN, false);
 

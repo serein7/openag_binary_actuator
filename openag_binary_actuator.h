@@ -22,6 +22,8 @@ class BinaryActuator {
     // Private variables
     int _pin;
     bool _is_active_low;
+    uint32_t _last_cmd;
+    const static int _max_update_interval = 10000;
 };
 
 #endif

@@ -3,15 +3,12 @@
 
 #include "Arduino.h"
 #include <std_msgs/Bool.h>
+#include <openag_module.h>
 
-class BinaryActuator {
+class BinaryActuator : public Module {
   public:
     // Constructor
     BinaryActuator(int pin, bool is_active_low);
-
-    // Public variables
-    bool has_error;
-    char* error_msg;
 
     // Public functions
     void begin();

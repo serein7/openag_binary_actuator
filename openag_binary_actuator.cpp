@@ -13,12 +13,14 @@ void BinaryActuator::begin() {
 void BinaryActuator::update() {
   uint32_t curr_time = millis();
   if ((curr_time - _last_cmd) > _max_update_interval) {
+/*
     if (_is_active_low) {
       digitalWrite(_pin, HIGH);
     }
     else {
       digitalWrite(_pin, LOW);
     }
+*/    
   }
 }
 
